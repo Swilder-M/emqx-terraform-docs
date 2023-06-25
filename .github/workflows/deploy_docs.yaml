@@ -90,5 +90,5 @@ jobs:
     - name: upload dist
       run: |
         pip3 install coscmd
-        coscmd config -a ${{ secrets.TENCENT_COS_ID }} -s ${{ secrets.TENCENT_COS_KEY }} -b docs-1302406139 -e cos.accelerate.myqcloud.com
+        coscmd config -a ${{ secrets.TENCENT_COS_ID }} -s ${{ secrets.TENCENT_COS_KEY }} -b docs-preview-1302406139 -e cos.accelerate.myqcloud.com
         coscmd upload -r frontend/docs/.vitepress/dist/ /
